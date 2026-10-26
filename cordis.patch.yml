@@ -1,0 +1,19 @@
+# dsh-adversary —— 假想敌（交付物对抗性预演）
+#
+# 安装后同时注册：
+#   1. 技能 adversary：把「发布前预演」变成完整流程（选角色 → 逐角色审查 → 汇总异议）
+#   2. 工具 adversary_personas / adversary_review：列出角色卡、生成逐角色审查任务书
+#
+# 插件自带空配置，不联网、不读文件、不需要账号或密钥。
+# 可选配置（在 profile 的 cordis.patch.yml 里覆盖同名 id 即可）：
+#
+#   - id: dsh-adversary
+#     config:
+#       defaultPersonas: ['strict-boss', 'picky-client', 'contrarian-peer']
+#       maxPersonas: 3            # 单次最多几个角色，默认 3
+#       intensity: 'normal'       # gentle / normal / brutal，默认 normal
+#
+- insert:
+    - id: dsh-adversary
+      name: dsh-adversary
+      config: {}

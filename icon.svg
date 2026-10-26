@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512" role="img" aria-label="dsh-adversary">
+  <title>dsh-adversary · 假想敌</title>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#141A24"/>
+      <stop offset="1" stop-color="#0A0D13"/>
+    </linearGradient>
+    <linearGradient id="paper" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#F5F7FA"/>
+      <stop offset="1" stop-color="#C9D2DE"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="512" height="512" rx="112" fill="url(#bg)"/>
+
+  <!-- 缺口圆环：包围但不闭合，暗示「还没定稿」 -->
+  <circle cx="256" cy="256" r="176" fill="none" stroke="#2B3647" stroke-width="10"
+          stroke-linecap="round" stroke-dasharray="760 346" transform="rotate(-38 256 256)"/>
+
+  <!-- 交付物：一页纸 -->
+  <rect x="196" y="150" width="120" height="212" rx="14" fill="url(#paper)"/>
+  <g stroke="#8C99AB" stroke-width="9" stroke-linecap="round">
+    <line x1="220" y1="192" x2="292" y2="192"/>
+    <line x1="220" y1="226" x2="292" y2="226"/>
+    <line x1="220" y1="260" x2="268" y2="260"/>
+    <line x1="220" y1="294" x2="284" y2="294"/>
+  </g>
+
+  <!-- 左侧假想敌：直刺 -->
+  <path d="M118 256 L176 218 L176 294 Z" fill="#FF5A5F"/>
+  <line x1="60" y1="256" x2="120" y2="256" stroke="#FF5A5F" stroke-width="12" stroke-linecap="round"/>
+
+  <!-- 右侧假想敌：斜刺 -->
+  <path d="M394 256 L336 218 L336 294 Z" fill="#4D9FFF"/>
+  <line x1="452" y1="256" x2="392" y2="256" stroke="#4D9FFF" stroke-width="12" stroke-linecap="round"/>
+
+  <!-- 命中点 -->
+  <circle cx="256" cy="256" r="13" fill="#0A0D13"/>
+  <circle cx="256" cy="256" r="13" fill="none" stroke="#FFD25A" stroke-width="5"/>
+</svg>

@@ -1,0 +1,51 @@
+{
+  "name": "dsh-adversary",
+  "version": "0.1.0",
+  "description": "交付物对抗性预演插件（假想敌）：发布前用严厉领导、挑剔客户、杠精等角色对文件、文案、视频脚本、朋友圈做一轮静态异议审查，输出异议清单与多角度汇总。 / Adversarial pre-flight review for anything you are about to ship.",
+  "type": "module",
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./package.json": "./package.json",
+    "./skills/*": "./skills/*"
+  },
+  "files": [
+    "lib",
+    "skills",
+    "cordis.patch.yml",
+    "README.md",
+    "LICENSE",
+    "icon.svg"
+  ],
+  "keywords": [
+    "dsh",
+    "deepseek-harness",
+    "dsh-plugin",
+    "adversary",
+    "red-team",
+    "review",
+    "persona",
+    "skill"
+  ],
+  "license": "MIT",
+  "author": "BKmoon12",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BKmoon12/dsh-adversary.git"
+  },
+  "homepage": "https://github.com/BKmoon12/dsh-adversary#readme",
+  "bugs": {
+    "url": "https://github.com/BKmoon12/dsh-adversary/issues"
+  },
+  "engines": {
+    "node": "^22.19.0 || >=24.0.0"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  },
+  "scripts": {
+    "test": "node test/smoke.mjs"
+  }
+}
